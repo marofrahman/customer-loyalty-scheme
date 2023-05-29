@@ -1,0 +1,33 @@
+WITH views AS 
+(
+  SELECT users.prism_plus_tier Tier,
+  count(distinct sesh.session_id) AS Visits
+  FROM prism-2023-c1.Prism_Main.users users JOIN `prism-2023-c1.Prism_Main.sessions` sesh
+  ON users.user_crm_id = sesh.user_crm_id
+  WHERE DATE BETWEEN '2022-07-01' AND '2022-12-31'
+  GROUP BY 1
+),
+purchases AS
+ (SELECT users.prism_plus_tier Tier,
+ COUNT(DISTINCT funnel.transaction_id) AS Purchases
+ FROM prism-2023-c1.Prism_Main.users users JOIN `prism-2023-c1.Prism_Main.funnelevents` funnel
+ ON users.user_crm_id = funnel.user_crm_id
+ WHERE event_name = 'purchase'
+ AND DATE BETWEEN '2022-07-01' AND '2022-12-31'
+ GROUP BY 1
+),
+
+table as
+(
+SELECT views.Tier Tier, views.Visits No_of_Visits, purchases.Purchases No_of_Purchases FROM views JOIN purchases on views.Tier = purchases.Tier ORDER BY
+(
+  CASE WHEN Tier = 'Bronze' THEN 1
+       WHEN Tier = 'Silver' THEN 2
+       WHEN Tier = 'Gold' THEN 3
+       ELSE 4 END
+) ASC
+)
+
+SELECT table.*,
+ROUND(No_of_Purchases / No_of_Visits,2) Conversion_Rate,
+ROUND(100*No_of_Purchases / No_of_Visits,2) CR_Percentages from table;
