@@ -9,3 +9,13 @@ Our aim was to analyse consumer behaviour over the last 6 months and then extrap
 * Conversion Rates
 
 As we understand that fashion e-commerce loyalty schemes **DO** work (as mentioned in this [article](https://whitelabel-loyalty.com/blog/loyalty-industry-insight/benefits-of-loyalty-programs?utm_medium=ppc&utm_term=benefits%20of%20loyalty%20programs&utm_campaign=Non+Brand+-+Blog+(UK)&utm_source=adwords&hsa_grp=142881141813&hsa_ad=632591862127&hsa_net=adwo)) along with added benefits, we went with the choice of desinging a new customer loyalty scheme to bring in more value from customer to the company.
+
+### Deliverables: ###
+* Business Case
+  * An [business case](https://docs.google.com/document/d/1NDMQzswoM71pa29yH2y-XlCEpAkT-IFhTj0O5aQpBWY/edit?usp=sharing) including an execustive summary and recommendations with research
+
+* Presentation
+  * A [presenation](https://docs.google.com/presentation/d/10TTZpEQIf5MnEbeI3wpVDVmMXTBLUsgrgj8CkXomAP8/edit?usp=sharing) delivered to the heads of analytics and customer service proposing this modified customer loyalty scheme
+
+* Dashboard
+  * A [Power BI dashboard](https://app.powerbi.com/groups/d4794dbe-058d-46e0-a484-5e379b4d31a7/reports/aca53151-acf2-481b-b50f-784be134904a/ReportSection?experience=power-bi) displaying (comparison between) key metrics and graphiucs visualising the numerical analysis done on the KPIs
