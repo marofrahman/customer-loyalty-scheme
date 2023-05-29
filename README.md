@@ -7,3 +7,5 @@ Our aim was to analyse consumer behaviour over the last 6 months and then extrap
 * Average Profits by Tier
 * Coupon Usage
 * Conversion Rates
+
+As we understand that fashion e-commerce loyalty schemes **DO** work (as mentioned in this [article](https://whitelabel-loyalty.com/blog/loyalty-industry-insight/benefits-of-loyalty-programs?utm_medium=ppc&utm_term=benefits%20of%20loyalty%20programs&utm_campaign=Non+Brand+-+Blog+(UK)&utm_source=adwords&hsa_grp=142881141813&hsa_ad=632591862127&hsa_net=adwo)) along with added benefits, we went with the choice of desinging a new customer loyalty scheme to bring in more value from customer to the company.
